@@ -7,3 +7,6 @@ Add features without touching base code.
 Reuse the same component in different environments with different behaviors.
 Inject error conditions, custom logging, or protocol violations for stress testing.
 Keep code clean, modular, and reusable.
+
+
+--- Aditya
