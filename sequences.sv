@@ -7,12 +7,13 @@ class base_seq extends uvm_sequence #(seq_item);
   endfunction
 
   task body();
-    `uvm_info(get_type_name(), "Inside task Body", UVM_LOW);
+    `uvm_info(get_type_name(), "Inside task Body", UVM_LOW)
     req = seq_item::type_id::create("req");
     start_item(req);
     assert(req.randomize());
     finish_item(req);
   endtask
 endclass
+
 
 
