@@ -4,7 +4,7 @@ class base_test extends uvm_test;
 
   `uvm_component_utils(base_test)
   
-  function new(string name = "base_test", uvm_component parent = null);
+  function new(string name = "", uvm_component parent);
     super.new(name, parent);
   endfunction
   
@@ -27,7 +27,7 @@ class err_test extends base_test;
   derived_drv_cb drvd_dr;
   `uvm_component_utils(err_test)
   
-  function new(string name = "err_test", uvm_component parent = null);
+  function new(string name = "", uvm_component parent);
     super.new(name, parent);
   endfunction
   
