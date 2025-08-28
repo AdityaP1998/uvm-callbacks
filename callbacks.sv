@@ -17,9 +17,10 @@ class derived_drv_cb extends driver_cb;
   endfunction
   
   task modify_pkt(ref seq_item req); // callback method implementation
-    `uvm_info(get_type_name()," Injecting errors",UVM_LOW);
+    `uvm_info(get_type_name()," Injecting errors",UVM_LOW)
     req.pkt = BAD_ERR1;
     req.addr = 16'hFFFF;
     req.print();
   endtask
 endclass
+
